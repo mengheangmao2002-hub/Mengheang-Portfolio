@@ -65,6 +65,7 @@
             transform: translateY(-4px);
             box-shadow: 0 16px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px 0 rgba(0, 242, 254, 0.12);
         }
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -95,6 +96,7 @@
     <!-- Header / Navbar -->
     <header class="fixed top-0 left-0 right-0 z-40 px-4 sm:px-8 py-4 transition-all duration-300">
         <nav class="max-w-6xl mx-auto glass-panel rounded-full px-6 py-3 flex items-center justify-between shadow-2xl">
+            <!-- Brand Logo -->
             <a href="#home" class="flex items-center gap-2.5 group">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-500 via-blue-600 to-rose-500 flex items-center justify-center text-white font-black text-sm shadow-md group-hover:rotate-12 transition-transform">
                     M
@@ -102,6 +104,7 @@
                 <span class="font-extrabold tracking-wider text-white group-hover:text-cyan-400 transition-colors text-sm sm:text-base">MENGHEANG<span class="text-rose-500">.</span></span>
             </a>
 
+            <!-- Desktop Nav Items -->
             <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-gray-300">
                 <a href="#home" class="nav-link hover:text-cyan-400 transition-colors">Home</a>
                 <a href="#work" class="nav-link hover:text-cyan-400 transition-colors">Work</a>
@@ -110,17 +113,20 @@
                 <a href="#contact" class="nav-link hover:text-cyan-400 transition-colors">Contact</a>
             </div>
 
+            <!-- CTA Button -->
             <div class="hidden md:flex items-center">
                 <a href="#contact" class="px-5 py-2 text-xs font-bold uppercase tracking-wider text-black bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full hover:shadow-lg hover:shadow-cyan-500/20 hover:scale-105 transition-all">
                     Let's Talk
                 </a>
             </div>
 
+            <!-- Mobile Menu Toggle Button -->
             <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white focus:outline-none p-1" aria-label="Toggle Menu">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </nav>
 
+        <!-- Mobile Drawer -->
         <div id="mobileDrawer" class="hidden md:hidden max-w-6xl mx-auto mt-2 glass-panel rounded-2xl p-6 shadow-2xl flex flex-col gap-4 border border-white/10">
             <a href="#home" class="mobile-link text-gray-300 hover:text-cyan-400 py-1.5 text-sm font-medium">Home</a>
             <a href="#work" class="mobile-link text-gray-300 hover:text-cyan-400 py-1.5 text-sm font-medium">Work</a>
@@ -240,12 +246,12 @@
                         <div>
                             <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Graphic Design Collection</h4>
                             <p class="text-xs text-gray-400 mt-2 leading-relaxed">
-                                Click below to view the Public holiday poster series along with Project 2 and Project 3.
+                                Click below to view the Public holiday poster series (15 posters) along with Project 2 and Project 3.
                             </p>
                         </div>
                         
                         <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[11px] text-emerald-400 font-mono font-semibold">Multiple Designs Inside</span>
+                            <span class="text-[11px] text-emerald-400 font-mono font-semibold">15 Posters Inside</span>
                             <button onclick="openModal('modal-graphic')" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 group/btn">
                                 View Details
                                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
@@ -449,225 +455,570 @@
                                 TikTok
                             </a>
 
-                            <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-400/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
-                                <i data-lucide="globe" class="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                            <a href="https://www.behance.net/425f5f7a" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-blue-400/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
+                                <svg class="w-4 h-4 fill-current text-blue-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                                    <path d="M22 7h-7V5h7v2zm-1.71 4.71c-.32-.48-.79-.88-1.41-1.18-.62-.3-1.37-.45-2.25-.45h-4.32V20h4.63c.96 0 1.77-.18 2.42-.54.65-.36 1.15-.87 1.5-1.53.35-.66.52-1.42.52-2.28 0-.91-.22-1.68-.66-2.31-.44-.63-1.05-1.07-1.82-1.32.55-.21.99-.54 1.33-1 .33-.46.5-1.02.5-1.68 0-.81-.22-1.53-.66-2.14zM8.3 10.3c.48 0 .86.11 1.15.33.29.22.44.53.44.93 0 .42-.16.74-.48.96-.32.22-.75.33-1.29.33H5.66v-2.55H8.3zm.32 6.55c-.58 0-1.03-.13-1.36-.39-.33-.26-.5-.62-.5-1.09 0-.44.17-.79.51-1.05.34-.26.82-.39 1.44-.39h2.95v2.92H8.62z"/>
+                                </svg>
                                 Behance
+                            </a>
+
+                            <a href="https://t.me/H3angz" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-sky-400/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
+                                <svg class="w-4 h-4 fill-current text-sky-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                                </svg>
+                                Telegram
+                            </a>
+
+                            <a href="https://www.facebook.com/meng.heang.39982/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-blue-500/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
+                                <svg class="w-4 h-4 fill-current text-blue-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                                    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/>
+                                </svg>
+                                Facebook
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="md:col-span-7">
-                    <form onsubmit="handleFormSubmit(event)" class="glass-card p-8 rounded-3xl border border-white/10 space-y-4">
+                <div class="md:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div>
-                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Name</label>
-                            <input type="text" required placeholder="Your name" class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors">
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="senderName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors">
                         </div>
+
                         <div>
-                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Email</label>
-                            <input type="email" required placeholder="your.email@example.com" class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors">
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Email</label>
+                            <input type="email" id="senderEmail" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors">
                         </div>
+
                         <div>
-                            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">Message</label>
-                            <textarea rows="4" required placeholder="Tell me about your project..." class="w-full bg-slate-900/80 border border-white/10 rounded-xl px-4 py-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition-colors resize-none"></textarea>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Category</label>
+                            <select id="projectCategory" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-white/10 text-white text-xs focus:outline-none focus:border-cyan-400 transition-colors">
+                                <option value="Graphic Design">Graphic Design (Ps / Ai)</option>
+                                <option value="Motion Graphics">Motion Graphics (Ae)</option>
+                                <option value="Video Editing">Video Editing (Pr / CapCut)</option>
+                                <option value="All Services">Full Creative Collaboration</option>
+                            </select>
                         </div>
-                        <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-bold text-xs uppercase tracking-wider rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
-                            Send Message
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Message</label>
+                            <textarea id="senderMessage" rows="4" required placeholder="Describe your project requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-rose-500 text-white font-bold text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
+                            Send Email
                         </button>
                     </form>
+
+                    <div id="formStatus" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs text-center font-medium">
+                        Opening your default mail client...
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <!-- Modal 1: Graphic Design -->
+    <div id="modal-graphic" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+        <div class="glass-panel max-w-5xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-graphic')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="mb-6">
+                <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Graphic Design</span>
+                <h3 class="text-2xl font-bold text-white mt-2">Graphic Design Projects</h3>
+                <p class="text-xs text-gray-400 mt-1">Detailed view of Graphic Design creations. Click any poster to view full-screen.</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Card 1: Public Holiday (15 Posters Gallery with Full-Screen Interactive Lightbox) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Public holiday</h4>
+                            <p class="text-xs text-gray-400 mt-1">15 poster designs for national & seasonal public holidays. Click any photo to see full view.</p>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Posters</span>
+                    </div>
+
+                    <!-- 15 Posters Sub-Grid -->
+                    <div id="publicHolidayGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <script>
+                            document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
+                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', 'Public Holiday Poster ${num}', 'publicHolidayGallery')">
+                                    <div class="aspect-[3/4] overflow-hidden relative">
+                                        <img src="graphic/pototo-${num}.jpg" alt="Pototo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
+                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
+                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
+                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 bg-slate-950/80 text-center border-t border-white/5">
+                                        <p class="text-[11px] font-semibold text-gray-200">Pototo ${num}</p>
+                                    </div>
+                                </div>
+                            `).join(''));
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Cards Grid for Project 2 and Project 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 2')">
+                        <div class="aspect-video bg-slate-900 overflow-hidden">
+                            <img src="graphic-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
+                        </div>
+                        <div class="p-4 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="text-base font-bold text-white">Project 2</h4>
+                                <p class="text-xs text-gray-400 mt-1">Complex photo manipulation, color grading, and visual composition in Photoshop.</p>
+                            </div>
+                            <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                                <span class="text-[10px] text-emerald-400 font-mono">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 3')">
+                        <div class="aspect-video bg-slate-900 overflow-hidden">
+                            <img src="graphic-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
+                        </div>
+                        <div class="p-4 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h4 class="text-base font-bold text-white">Project 3</h4>
+                                <p class="text-xs text-gray-400 mt-1">Social media post graphics, promotional assets, and typographic banners.</p>
+                            </div>
+                            <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                                <span class="text-[10px] text-emerald-400 font-mono">Ps / Ai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Motion Graphics -->
+    <div id="modal-motion" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+        <div class="glass-panel max-w-4xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-motion')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="mb-6">
+                <span class="bg-purple-500/20 text-purple-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Motion Graphic</span>
+                <h3 class="text-2xl font-bold text-white mt-2">Motion Graphic Projects</h3>
+                <p class="text-xs text-gray-400 mt-1">Detailed view of Motion Design animations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 1 - UI/UX Motion')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="motion-1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 1</h4>
+                            <p class="text-xs text-gray-400 mt-1">UI/UX interface animation and floating HUD screen graphics designed in After Effects.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-purple-400 font-mono">After Effects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 2 - Kinetic Typography')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="motion-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 2</h4>
+                            <p class="text-xs text-gray-400 mt-1">Title card kinetic typography with smooth keyframe curves and light flare effects.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-purple-400 font-mono">Ae / Keyframes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 3 - AI Visual Concept')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="motion-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 3</h4>
+                            <p class="text-xs text-gray-400 mt-1">AI-assisted visual effects concept design and audio-reactive waveform animations.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-purple-400 font-mono">Ae / Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Video Editing -->
+    <div id="modal-editing" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+        <div class="glass-panel max-w-4xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-editing')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="mb-6">
+                <span class="bg-rose-500/20 text-rose-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Video Editing</span>
+                <h3 class="text-2xl font-bold text-white mt-2">Video Editing Projects</h3>
+                <p class="text-xs text-gray-400 mt-1">Detailed view of Video Editing productions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 1 - Speed Ramping')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="editing-1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 1</h4>
+                            <p class="text-xs text-gray-400 mt-1">High-speed ramping and precise keyframe curve velocity editing in CapCut.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-rose-400 font-mono">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 2 - Cinematic Timeline')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="editing-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 2</h4>
+                            <p class="text-xs text-gray-400 mt-1">Full cinematic video edit with multi-track timeline cuts and audio syncing in Premiere Pro.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-rose-400 font-mono">Premiere Pro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 3 - Short Form Reel')">
+                    <div class="aspect-square bg-slate-900 overflow-hidden">
+                        <img src="editing-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 3</h4>
+                            <p class="text-xs text-gray-400 mt-1">Short-form vertical video reel edits with sound effects and custom transition cuts.</p>
+                        </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-rose-400 font-mono">Pr / CapCut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile-Optimized Full Screen Lightbox Modal for Full View Gallery -->
+    <div id="lightbox" class="fixed inset-0 z-[60] hidden flex-col justify-between p-3 sm:p-6 bg-black/95 backdrop-blur-xl transition-all duration-300">
+        
+        <!-- Lightbox Header -->
+        <div class="w-full flex items-center justify-between pt-2 px-2 z-30">
+            <p id="lightboxHeaderTitle" class="text-xs sm:text-sm font-semibold text-gray-300 font-mono truncate max-w-[70%]"></p>
+            <button onclick="closeLightbox()" class="text-gray-300 hover:text-white bg-slate-900/80 p-2.5 sm:p-3 rounded-full border border-white/10 z-30 transition-colors shadow-lg active:scale-95" aria-label="Close Lightbox">
+                <i data-lucide="x" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+            </button>
+        </div>
+
+        <!-- Main Lightbox Image View Container -->
+        <div class="relative w-full h-full flex items-center justify-center my-auto px-1 sm:px-4 py-2 overflow-hidden z-10">
+            
+            <!-- Left Navigation Button -->
+            <button id="lightboxPrevBtn" onclick="prevLightboxImage()" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Previous image">
+                <i data-lucide="chevron-left" class="w-5 h-5 sm:w-7 sm:h-7"></i>
+            </button>
+
+            <!-- Mobile Fit Container for Full Image View -->
+            <div class="w-full h-full flex flex-col items-center justify-center max-w-full max-h-full">
+                <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[78vh] sm:max-h-[82vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 select-none">
+            </div>
+
+            <!-- Right Navigation Button -->
+            <button id="lightboxNextBtn" onclick="nextLightboxImage()" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Next image">
+                <i data-lucide="chevron-right" class="w-5 h-5 sm:w-7 sm:h-7"></i>
+            </button>
+        </div>
+
+        <!-- Lightbox Caption Footer -->
+        <div class="w-full text-center pb-2 px-4 z-20">
+            <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-cyan-400 tracking-wide font-mono text-center"></p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="border-t border-white/10 py-8 px-4 text-center text-xs text-gray-500 relative z-10">
-        <p>© <span id="year"></span> Mengheang. Built with Tailwind CSS.</p>
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Mengheang. All rights reserved.</p>
+            <p class="flex items-center gap-1">Designed with <i data-lucide="heart" class="w-3.5 h-3.5 text-rose-500 fill-rose-500"></i> for Graphic, Motion & Video Editing</p>
+        </div>
     </footer>
 
-    <!-- Modals Section -->
-    <!-- Graphic Collection Modal -->
-    <div id="modal-graphic" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md overflow-y-auto p-4 sm:p-6 lg:p-10 flex justify-center items-start">
-        <div class="relative w-full max-w-4xl glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl my-8">
-            <button onclick="closeModal('modal-graphic')" class="absolute top-6 right-6 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            <h3 class="text-2xl font-bold text-white mb-2">Graphic Design Collection</h3>
-            <p class="text-xs text-cyan-400 font-mono mb-6">Explore the full grid of graphical creations. Click any image to view in full resolution.</p>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div class="aspect-square rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('graphic-1.jpg')">
-                    <img src="graphic-1.jpg" alt="Poster 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
-                </div>
-                <div class="aspect-square rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('graphic-2.jpg')">
-                    <img src="graphic-2.jpg" alt="Poster 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='graphic-1.jpg';">
-                </div>
-                <div class="aspect-square rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('graphic-3.jpg')">
-                    <img src="graphic-3.jpg" alt="Poster 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='graphic-1.jpg';">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Motion Collection Modal -->
-    <div id="modal-motion" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md overflow-y-auto p-4 sm:p-6 lg:p-10 flex justify-center items-start">
-        <div class="relative w-full max-w-4xl glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl my-8">
-            <button onclick="closeModal('modal-motion')" class="absolute top-6 right-6 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            <h3 class="text-2xl font-bold text-white mb-2">Motion Graphics Collection</h3>
-            <p class="text-xs text-purple-400 font-mono mb-6">Keyframe previews and motion compositions. Click any image to view in full resolution.</p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('motion-1.jpg')">
-                    <img src="motion-1.jpg" alt="Motion 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
-                </div>
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('motion-2.jpg')">
-                    <img src="motion-2.jpg" alt="Motion 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='motion-1.jpg';">
-                </div>
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('motion-3.jpg')">
-                    <img src="motion-3.jpg" alt="Motion 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='motion-1.jpg';">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Video Editing Collection Modal -->
-    <div id="modal-editing" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md overflow-y-auto p-4 sm:p-6 lg:p-10 flex justify-center items-start">
-        <div class="relative w-full max-w-4xl glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl my-8">
-            <button onclick="closeModal('modal-editing')" class="absolute top-6 right-6 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            <h3 class="text-2xl font-bold text-white mb-2">Video Editing Collection</h3>
-            <p class="text-xs text-rose-400 font-mono mb-6">Editing projects & timeline snapshots. Click any image to view in full resolution.</p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('editing-1.jpg')">
-                    <img src="editing-1.jpg" alt="Editing 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
-                </div>
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('editing-2.jpg')">
-                    <img src="editing-2.jpg" alt="Editing 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='editing-1.jpg';">
-                </div>
-                <div class="aspect-video rounded-2xl overflow-hidden glass-card cursor-pointer border border-white/10 group" onclick="openLightbox('editing-3.jpg')">
-                    <img src="editing-3.jpg" alt="Editing 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='editing-1.jpg';">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Lightbox Modal for Full View Image Display -->
-    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-xl flex items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all z-10">
-            <i data-lucide="x" class="w-6 h-6"></i>
-        </button>
-        <div class="max-w-5xl max-h-[90vh] flex items-center justify-center">
-            <img id="lightbox-img" src="" alt="Full View" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10">
-        </div>
-    </div>
-
-    <!-- JavaScript logic -->
     <script>
-        // Initialize Icons
+        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Footer Dynamic Year
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Mobile Menu Navigation Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileDrawer = document.getElementById('mobileDrawer');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileDrawer.classList.toggle('hidden');
-        });
-
-        // Close Mobile Drawer on Link Click
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileDrawer.classList.add('hidden');
-            });
-        });
-
-        // Clipboard Action
-        function copyEmailToClipboard() {
-            const email = "mengheangmao2002@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                showToast("Email address copied to clipboard!");
-            }).catch(err => {
-                showToast("Failed to copy email");
-            });
-        }
-
-        // Toast Trigger
+        // Toast Notification System
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toastMsg');
-            toastMsg.textContent = message;
-
+            toastMsg.innerText = message;
             toast.classList.remove('translate-y-20', 'opacity-0');
             toast.classList.add('translate-y-0', 'opacity-100');
-
             setTimeout(() => {
                 toast.classList.remove('translate-y-0', 'opacity-100');
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
         }
 
-        // Filter Categories logic
+        // Mobile Menu Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+            });
+        });
+
+        // Copy Email to Clipboard function
+        function copyEmailToClipboard() {
+            const email = "mengheangmao2002@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                showToast("Email address copied to clipboard!");
+            }).catch(() => {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = email;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                showToast("Email address copied to clipboard!");
+            });
+        }
+
+        // Portfolio Filtering Logic
         const filterBtns = document.querySelectorAll('.filter-btn');
         const projectCards = document.querySelectorAll('.project-card');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => {
-                    b.classList.remove('bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-white', 'shadow-md', 'active');
-                    b.classList.add('text-gray-400');
+                    b.classList.remove('active', 'bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-white', 'shadow-md');
+                    b.classList.add('text-gray-400', 'hover:text-white', 'hover:bg-white/5');
                 });
 
-                btn.classList.add('bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-white', 'shadow-md', 'active');
-                btn.classList.remove('text-gray-400');
+                btn.classList.add('active', 'bg-gradient-to-r', 'from-cyan-500', 'to-blue-600', 'text-white', 'shadow-md');
+                btn.classList.remove('text-gray-400', 'hover:text-white', 'hover:bg-white/5');
 
                 const filter = btn.getAttribute('data-filter');
 
                 projectCards.forEach(card => {
                     if (filter === 'all' || card.getAttribute('data-category') === filter) {
                         card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
                     } else {
-                        card.style.display = 'none';
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
                     }
                 });
             });
         });
 
-        // Category Modal Handlers
+        // Modal Controls
         function openModal(id) {
-            document.getElementById(id).classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
         }
 
         function closeModal(id) {
-            document.getElementById(id).classList.add('hidden');
-            document.body.style.overflow = 'auto';
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
         }
 
-        // Lightbox Preview Function (opens clicked image directly)
-        function openLightbox(imageSrc) {
+        // Lightbox state tracking for navigation
+        let currentLightboxImages = [];
+        let currentLightboxIndex = 0;
+
+        function openLightbox(src, caption = '', containerId = null) {
+            currentLightboxImages = [];
+
+            // Retrieve images from the gallery container (Public Holiday gallery)
+            if (containerId) {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    const imgs = container.querySelectorAll('img');
+                    imgs.forEach((img) => {
+                        const parent = img.closest('[onclick*="openLightbox"]');
+                        if (parent) {
+                            const parentCaption = parent.querySelector('p, h4')?.innerText || caption;
+                            // Store absolute URL path
+                            currentLightboxImages.push({
+                                src: img.src,
+                                caption: parentCaption
+                            });
+                        }
+                    });
+                }
+            }
+
+            // Fallback for single image clicks
+            if (currentLightboxImages.length === 0) {
+                currentLightboxImages = [{ src, caption }];
+            }
+
+            // Match exact source URL or relative path matching
+            currentLightboxIndex = currentLightboxImages.findIndex(item => {
+                const imgUrl = new URL(item.src, window.location.href).href;
+                const targetUrl = new URL(src, window.location.href).href;
+                return imgUrl === targetUrl;
+            });
+
+            if (currentLightboxIndex === -1) currentLightboxIndex = 0;
+
+            updateLightboxContent();
+
             const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightboxImg.src = imageSrc;
             lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateLightboxContent() {
+            if (currentLightboxImages.length === 0) return;
+            const item = currentLightboxImages[currentLightboxIndex];
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxHeaderTitle = document.getElementById('lightboxHeaderTitle');
+            const prevBtn = document.getElementById('lightboxPrevBtn');
+            const nextBtn = document.getElementById('lightboxNextBtn');
+
+            lightboxImg.src = item.src;
+
+            // Show controls and gallery counter for multi-image collections
+            if (currentLightboxImages.length > 1) {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+                lightboxHeaderTitle.innerText = `${item.caption}`;
+                lightboxCaption.innerText = `${currentLightboxIndex + 1} / ${currentLightboxImages.length}`;
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+                lightboxHeaderTitle.innerText = item.caption;
+                lightboxCaption.innerText = '';
+            }
+        }
+
+        function nextLightboxImage() {
+            if (currentLightboxImages.length <= 1) return;
+            currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxImages.length;
+            updateLightboxContent();
+        }
+
+        function prevLightboxImage() {
+            if (currentLightboxImages.length <= 1) return;
+            currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxImages.length) % currentLightboxImages.length;
+            updateLightboxContent();
         }
 
         function closeLightbox() {
-            document.getElementById('lightbox').classList.add('hidden');
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            
+            // Re-evaluate scroll status if sub-modals remain open
+            const openModals = document.querySelectorAll('[id^="modal-"]:not(.hidden)');
+            if (openModals.length === 0) {
+                document.body.style.overflow = 'auto';
+            }
         }
 
-        // Form Submit Handler
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            showToast("Message sent successfully!");
-            e.target.reset();
+        // Keyboard Arrow Navigation
+        window.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('hidden') && currentLightboxImages.length > 1) {
+                if (e.key === 'ArrowRight') {
+                    nextLightboxImage();
+                } else if (e.key === 'ArrowLeft') {
+                    prevLightboxImage();
+                } else if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            } else if (!lightbox.classList.contains('hidden') && e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close modal or lightbox on backdrop click
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('backdrop-blur-md')) {
+                const modals = document.querySelectorAll('[id^="modal-"]');
+                modals.forEach(m => {
+                    m.classList.add('hidden');
+                    m.classList.remove('flex');
+                });
+                document.body.style.overflow = 'auto';
+            }
+            if (e.target.id === 'lightbox' || e.target.classList.contains('backdrop-blur-xl')) {
+                closeLightbox();
+            }
+        });
+
+        // Contact Form Handling
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const email = document.getElementById('senderEmail').value;
+            const category = document.getElementById('projectCategory').value;
+            const message = document.getElementById('senderMessage').value;
+
+            const formStatus = document.getElementById('formStatus');
+            formStatus.classList.remove('hidden');
+
+            const subject = encodeURIComponent(`Portfolio Inquiry: ${category} (${name})`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCategory: ${category}\n\nMessage:\n${message}`);
+
+            window.location.href = `mailto:mengheangmao2002@gmail.com?subject=${subject}&body=${body}`;
+
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                document.getElementById('contactForm').reset();
+            }, 3000);
         }
     </script>
 </body>
