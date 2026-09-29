@@ -231,7 +231,7 @@
             <!-- Projects Grid -->
             <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Main Project 1: Graphic Design (Cover Image Updated to graphic-1.jpg) -->
+                <!-- Main Project 1: Graphic Design -->
                 <div class="project-card group glass-card rounded-3xl overflow-hidden border border-white/10 flex flex-col transition-all duration-500" data-category="graphic">
                     <div class="relative overflow-hidden aspect-square bg-slate-900 cursor-pointer" onclick="openModal('modal-graphic')">
                         <img src="graphic-1.jpg" alt="Graphic Design Showcase" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-out" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
@@ -534,23 +534,28 @@
             </div>
 
             <div class="space-y-8">
-                <!-- Card 1: Public Holiday (15 Posters Gallery with Left/Right Navigation) -->
+                <!-- Card 1: Public Holiday (15 Posters Gallery with Full-Screen Interactive Lightbox) -->
                 <div class="glass-card rounded-2xl p-6 border border-white/10">
                     <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                         <div>
                             <h4 class="text-xl font-bold text-white">Public holiday</h4>
-                            <p class="text-xs text-gray-400 mt-1">15 poster designs for national & seasonal public holidays.</p>
+                            <p class="text-xs text-gray-400 mt-1">15 poster designs for national & seasonal public holidays. Click any photo to see full view.</p>
                         </div>
                         <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Posters</span>
                     </div>
 
-                    <!-- 15 Posters Sub-Grid (Public Holiday Category Container) -->
+                    <!-- 15 Posters Sub-Grid -->
                     <div id="publicHolidayGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                         <script>
                             document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
-                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', 'Pototo ${num}', 'publicHolidayGallery')">
-                                    <div class="aspect-[3/4] overflow-hidden">
+                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', 'Public Holiday Poster ${num}', 'publicHolidayGallery')">
+                                    <div class="aspect-[3/4] overflow-hidden relative">
                                         <img src="graphic/pototo-${num}.jpg" alt="Pototo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
+                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
+                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
+                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="p-2 bg-slate-950/80 text-center border-t border-white/5">
                                         <p class="text-[11px] font-semibold text-gray-200">Pototo ${num}</p>
@@ -561,7 +566,7 @@
                     </div>
                 </div>
 
-                <!-- Cards Grid for Project 2 and Project 3 (Individual Views - No Left/Right Arrow Nav) -->
+                <!-- Cards Grid for Project 2 and Project 3 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 2')">
                         <div class="aspect-video bg-slate-900 overflow-hidden">
@@ -721,28 +726,40 @@
         </div>
     </div>
 
-    <!-- Image Lightbox Modal with Conditional Left/Right Navigation Controls -->
-    <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-between p-4 sm:p-8 bg-black/95 backdrop-blur-xl">
-        <!-- Close Button -->
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-gray-400 hover:text-white bg-slate-900/80 p-3 rounded-full border border-white/10 z-20 transition-colors shadow-lg">
-            <i data-lucide="x" class="w-6 h-6"></i>
-        </button>
-
-        <!-- Previous Button (Shown only for Public Holiday gallery) -->
-        <button id="lightboxPrevBtn" onclick="prevLightboxImage()" class="z-20 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-3.5 sm:p-4 rounded-full border border-white/10 transition-all hover:scale-110 shadow-2xl flex items-center justify-center" aria-label="Previous image">
-            <i data-lucide="chevron-left" class="w-6 h-6 sm:w-8 sm:h-8"></i>
-        </button>
-
-        <!-- Main Lightbox Image Container -->
-        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center justify-center my-auto px-4 z-10 mx-auto">
-            <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[72vh] object-contain rounded-2xl border border-white/10 shadow-2xl transition-all duration-300">
-            <p id="lightboxCaption" class="text-xs font-semibold text-gray-300 mt-4 tracking-wide font-mono text-center"></p>
+    <!-- Mobile-Optimized Full Screen Lightbox Modal for Full View Gallery -->
+    <div id="lightbox" class="fixed inset-0 z-[60] hidden flex-col justify-between p-3 sm:p-6 bg-black/95 backdrop-blur-xl transition-all duration-300">
+        
+        <!-- Lightbox Header -->
+        <div class="w-full flex items-center justify-between pt-2 px-2 z-30">
+            <p id="lightboxHeaderTitle" class="text-xs sm:text-sm font-semibold text-gray-300 font-mono truncate max-w-[70%]"></p>
+            <button onclick="closeLightbox()" class="text-gray-300 hover:text-white bg-slate-900/80 p-2.5 sm:p-3 rounded-full border border-white/10 z-30 transition-colors shadow-lg active:scale-95" aria-label="Close Lightbox">
+                <i data-lucide="x" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+            </button>
         </div>
 
-        <!-- Next Button (Shown only for Public Holiday gallery) -->
-        <button id="lightboxNextBtn" onclick="nextLightboxImage()" class="z-20 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-3.5 sm:p-4 rounded-full border border-white/10 transition-all hover:scale-110 shadow-2xl flex items-center justify-center" aria-label="Next image">
-            <i data-lucide="chevron-right" class="w-6 h-6 sm:w-8 sm:h-8"></i>
-        </button>
+        <!-- Main Lightbox Image View Container -->
+        <div class="relative w-full h-full flex items-center justify-center my-auto px-1 sm:px-4 py-2 overflow-hidden z-10">
+            
+            <!-- Left Navigation Button -->
+            <button id="lightboxPrevBtn" onclick="prevLightboxImage()" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Previous image">
+                <i data-lucide="chevron-left" class="w-5 h-5 sm:w-7 sm:h-7"></i>
+            </button>
+
+            <!-- Mobile Fit Container for Full Image View -->
+            <div class="w-full h-full flex flex-col items-center justify-center max-w-full max-h-full">
+                <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[78vh] sm:max-h-[82vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 select-none">
+            </div>
+
+            <!-- Right Navigation Button -->
+            <button id="lightboxNextBtn" onclick="nextLightboxImage()" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Next image">
+                <i data-lucide="chevron-right" class="w-5 h-5 sm:w-7 sm:h-7"></i>
+            </button>
+        </div>
+
+        <!-- Lightbox Caption Footer -->
+        <div class="w-full text-center pb-2 px-4 z-20">
+            <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-cyan-400 tracking-wide font-mono text-center"></p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -861,7 +878,7 @@
         function openLightbox(src, caption = '', containerId = null) {
             currentLightboxImages = [];
 
-            // Retrieve images ONLY if containerId is explicitly provided (Public Holiday gallery)
+            // Retrieve images from the gallery container (Public Holiday gallery)
             if (containerId) {
                 const container = document.getElementById(containerId);
                 if (container) {
@@ -879,7 +896,7 @@
                 }
             }
 
-            // Single image fallback if not part of a gallery group
+            // Fallback for single image clicks
             if (currentLightboxImages.length === 0) {
                 currentLightboxImages = [{ src, caption }];
             }
@@ -892,6 +909,7 @@
             const lightbox = document.getElementById('lightbox');
             lightbox.classList.remove('hidden');
             lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
         }
 
         function updateLightboxContent() {
@@ -899,20 +917,23 @@
             const item = currentLightboxImages[currentLightboxIndex];
             const lightboxImg = document.getElementById('lightboxImg');
             const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxHeaderTitle = document.getElementById('lightboxHeaderTitle');
             const prevBtn = document.getElementById('lightboxPrevBtn');
             const nextBtn = document.getElementById('lightboxNextBtn');
 
             lightboxImg.src = item.src;
 
-            // Show arrow buttons and counter ONLY when there are multiple photos (Public holiday gallery)
+            // Show controls and gallery counter for multi-image collections
             if (currentLightboxImages.length > 1) {
                 prevBtn.style.display = 'flex';
                 nextBtn.style.display = 'flex';
-                lightboxCaption.innerText = `${item.caption} (${currentLightboxIndex + 1}/${currentLightboxImages.length})`;
+                lightboxHeaderTitle.innerText = `${item.caption}`;
+                lightboxCaption.innerText = `${currentLightboxIndex + 1} / ${currentLightboxImages.length}`;
             } else {
                 prevBtn.style.display = 'none';
                 nextBtn.style.display = 'none';
-                lightboxCaption.innerText = item.caption;
+                lightboxHeaderTitle.innerText = item.caption;
+                lightboxCaption.innerText = '';
             }
         }
 
@@ -932,9 +953,15 @@
             const lightbox = document.getElementById('lightbox');
             lightbox.classList.add('hidden');
             lightbox.classList.remove('flex');
+            
+            // Re-evaluate scroll status if sub-modals remain open
+            const openModals = document.querySelectorAll('[id^="modal-"]:not(.hidden)');
+            if (openModals.length === 0) {
+                document.body.style.overflow = 'auto';
+            }
         }
 
-        // Keyboard Arrow Navigation (active only for galleries with multiple photos)
+        // Keyboard Arrow Navigation
         window.addEventListener('keydown', (e) => {
             const lightbox = document.getElementById('lightbox');
             if (!lightbox.classList.contains('hidden') && currentLightboxImages.length > 1) {
@@ -965,7 +992,7 @@
             }
         });
 
-        // Contact Form Handling (mailto generator)
+        // Contact Form Handling
         function handleFormSubmit(event) {
             event.preventDefault();
             const name = document.getElementById('senderName').value;
