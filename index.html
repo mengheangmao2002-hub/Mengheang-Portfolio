@@ -546,10 +546,9 @@
 
                     <!-- 15 Posters Sub-Grid -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <!-- Posters dynamically/statically rendered -->
                         <script>
                             document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
-                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', 'Pototo ${num}')">
+                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', 'Pototo ${num}', 'modal-graphic')">
                                     <div class="aspect-[3/4] overflow-hidden">
                                         <img src="graphic/pototo-${num}.jpg" alt="Pototo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
                                     </div>
@@ -564,7 +563,7 @@
 
                 <!-- Cards Grid for Project 2 and Project 3 -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 2')">
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 2', 'modal-graphic')">
                         <div class="aspect-video bg-slate-900 overflow-hidden">
                             <img src="graphic-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
                         </div>
@@ -579,7 +578,7 @@
                         </div>
                     </div>
 
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 3')">
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 3', 'modal-graphic')">
                         <div class="aspect-video bg-slate-900 overflow-hidden">
                             <img src="graphic-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
                         </div>
@@ -612,7 +611,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 1 - UI/UX Motion')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 1 - UI/UX Motion', 'modal-motion')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="motion-1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
                     </div>
@@ -627,7 +626,7 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 2 - Kinetic Typography')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 2 - Kinetic Typography', 'modal-motion')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="motion-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
                     </div>
@@ -642,7 +641,7 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 3 - AI Visual Concept')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 3 - AI Visual Concept', 'modal-motion')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="motion-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
                     </div>
@@ -674,7 +673,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 1 - Speed Ramping')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 1 - Speed Ramping', 'modal-editing')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="editing-1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
                     </div>
@@ -689,7 +688,7 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 2 - Cinematic Timeline')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 2 - Cinematic Timeline', 'modal-editing')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="editing-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
                     </div>
@@ -704,7 +703,7 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 3 - Short Form Reel')">
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 3 - Short Form Reel', 'modal-editing')">
                     <div class="aspect-square bg-slate-900 overflow-hidden">
                         <img src="editing-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
                     </div>
@@ -722,15 +721,28 @@
         </div>
     </div>
 
-    <!-- Image Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/95 backdrop-blur-xl">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-gray-400 hover:text-white bg-slate-900/80 p-3 rounded-full border border-white/10 z-10 transition-colors">
+    <!-- Image Lightbox Modal with Next/Previous Navigation Buttons -->
+    <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-between p-4 sm:p-8 bg-black/95 backdrop-blur-xl">
+        <!-- Close Button -->
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-gray-400 hover:text-white bg-slate-900/80 p-3 rounded-full border border-white/10 z-20 transition-colors shadow-lg">
             <i data-lucide="x" class="w-6 h-6"></i>
         </button>
-        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center">
-            <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[75vh] object-contain rounded-2xl border border-white/10 shadow-2xl">
-            <p id="lightboxCaption" class="text-xs font-semibold text-gray-300 mt-4 tracking-wide font-mono"></p>
+
+        <!-- Previous Button -->
+        <button onclick="prevLightboxImage()" class="z-20 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-3.5 sm:p-4 rounded-full border border-white/10 transition-all hover:scale-110 shadow-2xl flex items-center justify-center" aria-label="Previous image">
+            <i data-lucide="chevron-left" class="w-6 h-6 sm:w-8 sm:h-8"></i>
+        </button>
+
+        <!-- Main Lightbox Image Container -->
+        <div class="max-w-4xl max-h-[85vh] flex flex-col items-center justify-center my-auto px-4 z-10">
+            <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[72vh] object-contain rounded-2xl border border-white/10 shadow-2xl transition-all duration-300">
+            <p id="lightboxCaption" class="text-xs font-semibold text-gray-300 mt-4 tracking-wide font-mono text-center"></p>
         </div>
+
+        <!-- Next Button -->
+        <button onclick="nextLightboxImage()" class="z-20 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-3.5 sm:p-4 rounded-full border border-white/10 transition-all hover:scale-110 shadow-2xl flex items-center justify-center" aria-label="Next image">
+            <i data-lucide="chevron-right" class="w-6 h-6 sm:w-8 sm:h-8"></i>
+        </button>
     </div>
 
     <!-- Footer -->
@@ -842,15 +854,64 @@
             }
         }
 
-        // Image Lightbox Logic
-        function openLightbox(src, caption = '') {
+        // Lightbox state tracking for navigation
+        let currentLightboxImages = [];
+        let currentLightboxIndex = 0;
+
+        function openLightbox(src, caption = '', containerId = null) {
+            currentLightboxImages = [];
+
+            if (containerId) {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    const imgs = container.querySelectorAll('img');
+                    imgs.forEach((img) => {
+                        const parent = img.closest('[onclick*="openLightbox"]');
+                        if (parent) {
+                            const parentCaption = parent.querySelector('p, h4')?.innerText || caption;
+                            currentLightboxImages.push({
+                                src: img.src,
+                                caption: parentCaption
+                            });
+                        }
+                    });
+                }
+            }
+
+            if (currentLightboxImages.length === 0) {
+                currentLightboxImages = [{ src, caption }];
+            }
+
+            currentLightboxIndex = currentLightboxImages.findIndex(item => item.src === src || src.includes(item.src));
+            if (currentLightboxIndex === -1) currentLightboxIndex = 0;
+
+            updateLightboxContent();
+
             const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-            lightboxImg.src = src;
-            lightboxCaption.innerText = caption;
             lightbox.classList.remove('hidden');
             lightbox.classList.add('flex');
+        }
+
+        function updateLightboxContent() {
+            if (currentLightboxImages.length === 0) return;
+            const item = currentLightboxImages[currentLightboxIndex];
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            
+            lightboxImg.src = item.src;
+            lightboxCaption.innerText = `${item.caption} (${currentLightboxIndex + 1}/${currentLightboxImages.length})`;
+        }
+
+        function nextLightboxImage() {
+            if (currentLightboxImages.length === 0) return;
+            currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxImages.length;
+            updateLightboxContent();
+        }
+
+        function prevLightboxImage() {
+            if (currentLightboxImages.length === 0) return;
+            currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxImages.length) % currentLightboxImages.length;
+            updateLightboxContent();
         }
 
         function closeLightbox() {
@@ -858,6 +919,20 @@
             lightbox.classList.add('hidden');
             lightbox.classList.remove('flex');
         }
+
+        // Keyboard Arrow Navigation
+        window.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'ArrowRight') {
+                    nextLightboxImage();
+                } else if (e.key === 'ArrowLeft') {
+                    prevLightboxImage();
+                } else if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            }
+        });
 
         // Close modal or lightbox on backdrop click
         window.addEventListener('click', (e) => {
@@ -869,7 +944,7 @@
                 });
                 document.body.style.overflow = 'auto';
             }
-            if (e.target.classList.contains('backdrop-blur-xl')) {
+            if (e.target.id === 'lightbox' || e.target.classList.contains('backdrop-blur-xl')) {
                 closeLightbox();
             }
         });
