@@ -246,12 +246,12 @@
                         <div>
                             <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Graphic Design Collection</h4>
                             <p class="text-xs text-gray-400 mt-2 leading-relaxed">
-                                Click below to view the Public holiday poster series (15 posters) along with Project 2 and Project 3.
+                                Click below to view Public holiday (15 photos) and Realestate (15 photos) along with Project 3.
                             </p>
                         </div>
                         
                         <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[11px] text-emerald-400 font-mono font-semibold">15 Posters Inside</span>
+                            <span class="text-[11px] text-emerald-400 font-mono font-semibold">30 Posters Inside</span>
                             <button onclick="openModal('modal-graphic')" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 group/btn">
                                 View Details
                                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
@@ -530,27 +530,27 @@
             <div class="mb-6">
                 <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Graphic Design</span>
                 <h3 class="text-2xl font-bold text-white mt-2">Graphic Design Projects</h3>
-                <p class="text-xs text-gray-400 mt-1">Detailed view of Graphic Design creations. Click any poster to view full-screen.</p>
+                <p class="text-xs text-gray-400 mt-1">Detailed view of Graphic Design creations. Click any photo to view full-screen.</p>
             </div>
 
             <div class="space-y-8">
-                <!-- Card 1: Public Holiday (15 Posters Gallery with Full-Screen Interactive Lightbox) -->
+                <!-- Card 1: Public Holiday (15 Photos Gallery) -->
                 <div class="glass-card rounded-2xl p-6 border border-white/10">
                     <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                         <div>
                             <h4 class="text-xl font-bold text-white">Public holiday</h4>
-                            <p class="text-xs text-gray-400 mt-1">15 poster designs for national & seasonal public holidays. Click any photo to see full view.</p>
+                            <p class="text-xs text-gray-400 mt-1">15 photo designs for national & seasonal public holidays. Click any photo to see full view.</p>
                         </div>
-                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Posters</span>
+                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Photos</span>
                     </div>
 
-                    <!-- 15 Posters Sub-Grid -->
+                    <!-- 15 Photos Sub-Grid -->
                     <div id="publicHolidayGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                         <script>
                             document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
                                 <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', '', 'publicHolidayGallery')">
                                     <div class="aspect-[3/4] overflow-hidden relative">
-                                        <img src="graphic/pototo-${num}.jpg" alt="Poster ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
+                                        <img src="graphic/pototo-${num}.jpg" alt="Photo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
                                         <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
                                             <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
                                                 <i data-lucide="maximize-2" class="w-4 h-4"></i>
@@ -563,35 +563,47 @@
                     </div>
                 </div>
 
-                <!-- Cards Grid for Project 2 and Project 3 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 2')">
-                        <div class="aspect-video bg-slate-900 overflow-hidden">
-                            <img src="graphic-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
+                <!-- Card 2: Realestate (15 Photos Gallery) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Realestate</h4>
+                            <p class="text-xs text-gray-400 mt-1">15 photo designs for property listings & real estate promotions. Click any photo to see full view.</p>
                         </div>
-                        <div class="p-4 flex flex-col justify-between flex-grow">
-                            <div>
-                                <h4 class="text-base font-bold text-white">Project 2</h4>
-                                <p class="text-xs text-gray-400 mt-1">Complex photo manipulation, color grading, and visual composition in Photoshop.</p>
-                            </div>
-                            <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                                <span class="text-[10px] text-emerald-400 font-mono">Photoshop</span>
-                            </div>
-                        </div>
+                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Photos</span>
                     </div>
 
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 3')">
-                        <div class="aspect-video bg-slate-900 overflow-hidden">
-                            <img src="graphic-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
+                    <!-- 15 Photos Sub-Grid for Realestate -->
+                    <div id="realestateGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <script>
+                            document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
+                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/realestate-${num}.jpg', '', 'realestateGallery')">
+                                    <div class="aspect-[3/4] overflow-hidden relative">
+                                        <img src="graphic/realestate-${num}.jpg" alt="Realestate Photo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
+                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
+                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
+                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join(''));
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Card 3: Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('graphic-1.jpg', 'Project 3')">
+                    <div class="aspect-video bg-slate-900 overflow-hidden">
+                        <img src="graphic-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1_2.jpg';">
+                    </div>
+                    <div class="p-4 flex flex-col justify-between flex-grow">
+                        <div>
+                            <h4 class="text-base font-bold text-white">Project 3</h4>
+                            <p class="text-xs text-gray-400 mt-1">Social media post graphics, promotional assets, and typographic banners.</p>
                         </div>
-                        <div class="p-4 flex flex-col justify-between flex-grow">
-                            <div>
-                                <h4 class="text-base font-bold text-white">Project 3</h4>
-                                <p class="text-xs text-gray-400 mt-1">Social media post graphics, promotional assets, and typographic banners.</p>
-                            </div>
-                            <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                                <span class="text-[10px] text-emerald-400 font-mono">Ps / Ai</span>
-                            </div>
+                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
+                            <span class="text-[10px] text-emerald-400 font-mono">Ps / Ai</span>
                         </div>
                     </div>
                 </div>
@@ -875,7 +887,7 @@
         function openLightbox(src, caption = '', containerId = null) {
             currentLightboxImages = [];
 
-            // Retrieve images from the gallery container (Public Holiday gallery)
+            // Retrieve images from the specified gallery container
             if (containerId) {
                 const container = document.getElementById(containerId);
                 if (container) {
@@ -884,7 +896,6 @@
                         const parent = img.closest('[onclick*="openLightbox"]');
                         if (parent) {
                             const parentCaption = parent.querySelector('p, h4')?.innerText || caption;
-                            // Store absolute URL path
                             currentLightboxImages.push({
                                 src: img.src,
                                 caption: parentCaption
