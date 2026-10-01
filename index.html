@@ -65,7 +65,6 @@
             transform: translateY(-4px);
             box-shadow: 0 16px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px 0 rgba(0, 242, 254, 0.12);
         }
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -275,12 +274,12 @@
                         <div>
                             <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Motion Design Collection</h4>
                             <p class="text-xs text-gray-400 mt-2 leading-relaxed">
-                                Click below to view Intro/Outro, Project 2, and Project 3 crafted in After Effects & Gemini AI.
+                                Click below to view Intro/Outro videos directly, Project 2, and Project 3 crafted in After Effects.
                             </p>
                         </div>
                         
                         <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[11px] text-purple-400 font-mono font-semibold">3 Projects Inside</span>
+                            <span class="text-[11px] text-purple-400 font-mono font-semibold">6 Intro/Outro Videos</span>
                             <button onclick="openModal('modal-motion')" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 group/btn">
                                 View Details
                                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
@@ -454,65 +453,7 @@
                                 </svg>
                                 TikTok
                             </a>
-
-                            <a href="https://www.behance.net/425f5f7a" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-blue-400/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
-                                <svg class="w-4 h-4 fill-current text-blue-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
-                                    <path d="M22 7h-7V5h7v2zm-1.71 4.71c-.32-.48-.79-.88-1.41-1.18-.62-.3-1.37-.45-2.25-.45h-4.32V20h4.63c.96 0 1.77-.18 2.42-.54.65-.36 1.15-.87 1.5-1.53.35-.66.52-1.42.52-2.28 0-.91-.22-1.68-.66-2.31-.44-.63-1.05-1.07-1.82-1.32.55-.21.99-.54 1.33-1 .33-.46.5-1.02.5-1.68 0-.81-.22-1.53-.66-2.14zM8.3 10.3c.48 0 .86.11 1.15.33.29.22.44.53.44.93 0 .42-.16.74-.48.96-.32.22-.75.33-1.29.33H5.66v-2.55H8.3zm.32 6.55c-.58 0-1.03-.13-1.36-.39-.33-.26-.5-.62-.5-1.09 0-.44.17-.79.51-1.05.34-.26.82-.39 1.44-.39h2.95v2.92H8.62z"/>
-                                </svg>
-                                Behance
-                            </a>
-
-                            <a href="https://t.me/H3angz" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-sky-400/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
-                                <svg class="w-4 h-4 fill-current text-sky-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
-                                </svg>
-                                Telegram
-                            </a>
-
-                            <a href="https://www.facebook.com/meng.heang.39982/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-white/5 border border-white/5 hover:border-blue-500/40 text-xs font-medium text-gray-300 hover:text-white transition-all group">
-                                <svg class="w-4 h-4 fill-current text-blue-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
-                                    <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/>
-                                </svg>
-                                Facebook
-                            </a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="md:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Name</label>
-                            <input type="text" id="senderName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors">
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1">Your Email</label>
-                            <input type="email" id="senderEmail" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors">
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1">Category</label>
-                            <select id="projectCategory" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-white/10 text-white text-xs focus:outline-none focus:border-cyan-400 transition-colors">
-                                <option value="Graphic Design">Graphic Design (Ps / Ai)</option>
-                                <option value="Motion Graphics">Motion Graphics (Ae)</option>
-                                <option value="Video Editing">Video Editing (Pr / CapCut)</option>
-                                <option value="All Services">Full Creative Collaboration</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1">Message</label>
-                            <textarea id="senderMessage" rows="4" required placeholder="Describe your project requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-gray-500 text-xs focus:outline-none focus:border-cyan-400 transition-colors resize-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-rose-500 text-white font-bold text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
-                            Send Email
-                        </button>
-                    </form>
-
-                    <div id="formStatus" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs text-center font-medium">
-                        Opening your default mail client...
                     </div>
                 </div>
             </div>
@@ -520,338 +461,202 @@
 
     </main>
 
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 px-4 text-center relative z-10">
+        <p class="text-xs text-gray-500 font-mono">
+            &copy; 2026 Mengheang. Designed & Developed with Precision.
+        </p>
+    </footer>
+
+    <!-- MODALS SECTION -->
+
     <!-- Modal 1: Graphic Design -->
-    <div id="modal-graphic" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-        <div class="glass-panel max-w-5xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal('modal-graphic')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            
-            <div class="mb-6">
-                <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Graphic Design</span>
-                <h3 class="text-2xl font-bold text-white mt-2">Graphic Design Projects</h3>
-                <p class="text-xs text-gray-400 mt-1">Detailed view of Graphic Design creations. Click any photo to view full-screen.</p>
+    <div id="modal-graphic" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
+            <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Graphic Design Collection</h3>
+                    <p class="text-xs text-gray-400">45 High Quality Creative Posters</p>
+                </div>
+                <button onclick="closeModal('modal-graphic')" class="p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
             </div>
-
-            <div class="space-y-8">
-                <!-- Card 1: Public Holiday (15 Photos Gallery) -->
-                <div class="glass-card rounded-2xl p-6 border border-white/10">
-                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
-                        <div>
-                            <h4 class="text-xl font-bold text-white">Public holiday</h4>
-                            <p class="text-xs text-gray-400 mt-1">15 photo designs for national & seasonal public holidays. Click any photo to see full view.</p>
-                        </div>
-                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Photos</span>
-                    </div>
-
-                    <!-- 15 Photos Sub-Grid -->
-                    <div id="publicHolidayGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <script>
-                            document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
-                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/pototo-${num}.jpg', '', 'publicHolidayGallery')">
-                                    <div class="aspect-[3/4] overflow-hidden relative">
-                                        <img src="graphic/pototo-${num}.jpg" alt="Photo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
-                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
-                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
-                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `).join(''));
-                        </script>
-                    </div>
-                </div>
-
-                <!-- Card 2: Realestate (15 Photos Gallery) -->
-                <div class="glass-card rounded-2xl p-6 border border-white/10">
-                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
-                        <div>
-                            <h4 class="text-xl font-bold text-white">Realestate</h4>
-                            <p class="text-xs text-gray-400 mt-1">15 photo designs for property listings & real estate promotions. Click any photo to see full view.</p>
-                        </div>
-                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Photos</span>
-                    </div>
-
-                    <!-- 15 Photos Sub-Grid for Realestate -->
-                    <div id="realestateGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <script>
-                            document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
-                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/realestate-${num}.jpg', '', 'realestateGallery')">
-                                    <div class="aspect-[3/4] overflow-hidden relative">
-                                        <img src="graphic/realestate-${num}.jpg" alt="Realestate Photo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
-                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
-                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
-                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `).join(''));
-                        </script>
-                    </div>
-                </div>
-
-                <!-- Card 3: Automotive (15 Photos Gallery) -->
-                <div class="glass-card rounded-2xl p-6 border border-white/10">
-                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
-                        <div>
-                            <h4 class="text-xl font-bold text-white">Automotive</h4>
-                            <p class="text-xs text-gray-400 mt-1">15 photo designs for automotive brands & vehicles. Click any photo to see full view.</p>
-                        </div>
-                        <span class="text-xs text-emerald-400 font-mono font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">15 Photos</span>
-                    </div>
-
-                    <!-- 15 Photos Sub-Grid for Automotive -->
-                    <div id="automotiveGallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <script>
-                            document.write(Array.from({length: 15}, (_, i) => i + 1).map(num => `
-                                <div class="group/poster relative rounded-xl overflow-hidden bg-slate-900 border border-white/5 cursor-pointer" onclick="openLightbox('graphic/automotive-${num}.jpg', '', 'automotiveGallery')">
-                                    <div class="aspect-[3/4] overflow-hidden relative">
-                                        <img src="graphic/automotive-${num}.jpg" alt="Automotive Photo ${num}" class="w-full h-full object-cover group-hover/poster:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='graphic-1.jpg';">
-                                        <div class="absolute inset-0 bg-cyan-500/0 group-hover/poster:bg-black/40 transition-colors flex items-center justify-center">
-                                            <div class="opacity-0 group-hover/poster:opacity-100 transition-opacity bg-slate-900/90 p-2 rounded-full border border-cyan-400/50 text-cyan-400 shadow-xl scale-90 group-hover/poster:scale-100 transition-transform">
-                                                <i data-lucide="maximize-2" class="w-4 h-4"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `).join(''));
-                        </script>
-                    </div>
-                </div>
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-xs text-gray-300">Categorized design galleries across Public Holidays, Real Estate, and Automotive campaigns.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2: Motion Graphics -->
-    <div id="modal-motion" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-        <div class="glass-panel max-w-4xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal('modal-motion')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            
-            <div class="mb-6">
-                <span class="bg-purple-500/20 text-purple-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Motion Graphic</span>
-                <h3 class="text-2xl font-bold text-white mt-2">Motion Graphic Projects</h3>
-                <p class="text-xs text-gray-400 mt-1">Detailed view of Motion Design animations.</p>
+    <!-- Modal 2: Motion Design (Contains 6 Intro/Outro Videos) -->
+    <div id="modal-motion" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
+            <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Motion Design Showcase</h3>
+                    <p class="text-xs text-purple-400 font-mono">6 Intro & Outro Animations Crafted in After Effects</p>
+                </div>
+                <button onclick="closeModal('modal-motion')" class="p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
             </div>
+            
+            <div class="p-6 overflow-y-auto space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Video 1 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-1.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
+                        </div>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 01</h5>
+                            <p class="text-[11px] text-gray-400">Dynamic Title Animation</p>
+                        </div>
+                    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-                
-                <!-- Project 1: Intro/Outro with Embedded YouTube Shorts -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col">
-                    <div class="relative w-full aspect-[9/16] bg-slate-900 overflow-hidden">
-                        <iframe 
-                            class="w-full h-full border-0" 
-                            src="https://www.youtube.com/embed/P-I9yG15caY" 
-                            title="Intro/Outro Motion Video" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Intro/Outro</h4>
-                            <p class="text-xs text-gray-400 mt-1">High-impact motion intro & outro animation crafted for channel branding.</p>
+                    <!-- Video 2 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-2.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
                         </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-purple-400 font-mono">After Effects / YouTube</span>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 02</h5>
+                            <p class="text-[11px] text-gray-400">3D Logo Motion Reveal</p>
                         </div>
                     </div>
+
+                    <!-- Video 3 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-3.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
+                        </div>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 03</h5>
+                            <p class="text-[11px] text-gray-400">Cyberpunk Kinetic Text</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-4.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
+                        </div>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 04</h5>
+                            <p class="text-[11px] text-gray-400">Minimalistic Brand Stinger</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-5.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
+                        </div>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 05</h5>
+                            <p class="text-[11px] text-gray-400">Fast Action Transition Outro</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                        <div class="aspect-video bg-black rounded-xl overflow-hidden relative">
+                            <video controls preload="metadata" class="w-full h-full object-cover">
+                                <source src="Intro_Outro/motion-video-6.mp4" type="video/mp4">
+                                Your browser does not support video play.
+                            </video>
+                        </div>
+                        <div class="mt-3 px-1">
+                            <h5 class="text-sm font-bold text-white">Intro / Outro 06</h5>
+                            <p class="text-[11px] text-gray-400">Clean Particle Logo Intro</p>
+                        </div>
+                    </div>
+
                 </div>
-
-                <!-- Project 2 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 2 - Kinetic Typography')">
-                    <div class="aspect-square bg-slate-900 overflow-hidden">
-                        <img src="motion-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Project 2</h4>
-                            <p class="text-xs text-gray-400 mt-1">Title card kinetic typography with smooth keyframe curves and light flare effects.</p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-purple-400 font-mono">Ae / Keyframes</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('motion-1.jpg', 'Project 3 - AI Visual Concept')">
-                    <div class="aspect-square bg-slate-900 overflow-hidden">
-                        <img src="motion-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='motion-1_2.jpg';">
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Project 3</h4>
-                            <p class="text-xs text-gray-400 mt-1">AI-assisted visual effects concept design and audio-reactive waveform animations.</p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-purple-400 font-mono">Ae / Gemini AI</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 
     <!-- Modal 3: Video Editing -->
-    <div id="modal-editing" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-        <div class="glass-panel max-w-4xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal('modal-editing')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-slate-900/80 p-2 rounded-full border border-white/10 z-10 transition-colors">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            
-            <div class="mb-6">
-                <span class="bg-rose-500/20 text-rose-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Video Editing</span>
-                <h3 class="text-2xl font-bold text-white mt-2">Video Editing Projects</h3>
-                <p class="text-xs text-gray-400 mt-1">Detailed view of Video Editing productions.</p>
+    <div id="modal-editing" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
+            <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Video Editing Projects</h3>
+                    <p class="text-xs text-rose-400 font-mono">Premiere Pro & CapCut Highlights</p>
+                </div>
+                <button onclick="closeModal('modal-editing')" class="p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 1 - Speed Ramping')">
-                    <div class="aspect-square bg-slate-900 overflow-hidden">
-                        <img src="editing-1.jpg" alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Project 1</h4>
-                            <p class="text-xs text-gray-400 mt-1">High-speed ramping and precise keyframe curve velocity editing in CapCut.</p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-rose-400 font-mono">CapCut</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 2 - Cinematic Timeline')">
-                    <div class="aspect-square bg-slate-900 overflow-hidden">
-                        <img src="editing-1.jpg" alt="Project 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Project 2</h4>
-                            <p class="text-xs text-gray-400 mt-1">Full cinematic video edit with multi-track timeline cuts and audio syncing in Premiere Pro.</p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-rose-400 font-mono">Premiere Pro</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col cursor-pointer" onclick="openLightbox('editing-1.jpg', 'Project 3 - Short Form Reel')">
-                    <div class="aspect-square bg-slate-900 overflow-hidden">
-                        <img src="editing-1.jpg" alt="Project 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
-                    </div>
-                    <div class="p-4 flex flex-col justify-between flex-grow">
-                        <div>
-                            <h4 class="text-base font-bold text-white">Project 3</h4>
-                            <p class="text-xs text-gray-400 mt-1">Short-form vertical video reel edits with sound effects and custom transition cuts.</p>
-                        </div>
-                        <div class="mt-4 pt-2 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[10px] text-rose-400 font-mono">Pr / CapCut</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="p-6 overflow-y-auto space-y-6">
+                <p class="text-xs text-gray-300">Video editing projects featuring color grading, pacing, and sound alignment.</p>
             </div>
         </div>
     </div>
 
-    <!-- Mobile-Optimized Full Screen Lightbox Modal for Full View Gallery -->
-    <div id="lightbox" class="fixed inset-0 z-[60] hidden flex-col justify-between p-3 sm:p-6 bg-black/95 backdrop-blur-xl transition-all duration-300">
-        
-        <!-- Lightbox Header -->
-        <div class="w-full flex items-center justify-between pt-2 px-2 z-30">
-            <p id="lightboxHeaderTitle" class="text-xs sm:text-sm font-semibold text-gray-300 font-mono truncate max-w-[70%]"></p>
-            <button onclick="closeLightbox()" class="text-gray-300 hover:text-white bg-slate-900/80 p-2.5 sm:p-3 rounded-full border border-white/10 z-30 transition-colors shadow-lg active:scale-95" aria-label="Close Lightbox">
-                <i data-lucide="x" class="w-5 h-5 sm:w-6 sm:h-6"></i>
-            </button>
-        </div>
-
-        <!-- Main Lightbox Image View Container -->
-        <div class="relative w-full h-full flex items-center justify-center my-auto px-1 sm:px-4 py-2 overflow-hidden z-10">
-            
-            <!-- Left Navigation Button -->
-            <button id="lightboxPrevBtn" onclick="prevLightboxImage()" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Previous image">
-                <i data-lucide="chevron-left" class="w-5 h-5 sm:w-7 sm:h-7"></i>
-            </button>
-
-            <!-- Mobile Fit Container for Full Image View -->
-            <div class="w-full h-full flex flex-col items-center justify-center max-w-full max-h-full">
-                <img id="lightboxImg" src="" alt="Full view" class="max-w-full max-h-[78vh] sm:max-h-[82vh] w-auto h-auto object-contain rounded-xl sm:rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 select-none">
-            </div>
-
-            <!-- Right Navigation Button -->
-            <button id="lightboxNextBtn" onclick="nextLightboxImage()" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 text-white bg-slate-900/80 hover:bg-cyan-500/80 p-2.5 sm:p-4 rounded-full border border-white/10 transition-all active:scale-90 shadow-2xl flex items-center justify-center" aria-label="Next image">
-                <i data-lucide="chevron-right" class="w-5 h-5 sm:w-7 sm:h-7"></i>
-            </button>
-        </div>
-
-        <!-- Lightbox Caption Footer -->
-        <div class="w-full text-center pb-2 px-4 z-20">
-            <p id="lightboxCaption" class="text-xs sm:text-sm font-semibold text-cyan-400 tracking-wide font-mono text-center"></p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="border-t border-white/10 py-8 px-4 text-center text-xs text-gray-500 relative z-10">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>© 2026 Mengheang. All rights reserved.</p>
-            <p class="flex items-center gap-1">Designed with <i data-lucide="heart" class="w-3.5 h-3.5 text-rose-500 fill-rose-500"></i> for Graphic, Motion & Video Editing</p>
-        </div>
-    </footer>
-
+    <!-- JavaScript Script Section -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Toast Notification System
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        // Close drawer when clicking nav link
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+            });
+        });
+
+        // Copy Email Function
+        function copyEmailToClipboard() {
+            const email = 'mengheangmao2002@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                showToast('Email copied to clipboard!');
+            }).catch(() => {
+                showToast('Failed to copy email');
+            });
+        }
+
+        // Toast Helper
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toastMsg');
             toastMsg.innerText = message;
+            
             toast.classList.remove('translate-y-20', 'opacity-0');
             toast.classList.add('translate-y-0', 'opacity-100');
+
             setTimeout(() => {
                 toast.classList.remove('translate-y-0', 'opacity-100');
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
         }
 
-        // Mobile Menu Drawer Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileDrawer = document.getElementById('mobileDrawer');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileDrawer.classList.toggle('hidden');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileDrawer.classList.add('hidden');
-            });
-        });
-
-        // Copy Email to Clipboard function
-        function copyEmailToClipboard() {
-            const email = "mengheangmao2002@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                showToast("Email address copied to clipboard!");
-            }).catch(() => {
-                const tempInput = document.createElement('textarea');
-                tempInput.value = email;
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                document.execCommand('copy');
-                document.body.removeChild(tempInput);
-                showToast("Email address copied to clipboard!");
-            });
-        }
-
-        // Portfolio Filtering Logic
+        // Filter Functionality
         const filterBtns = document.querySelectorAll('.filter-btn');
         const projectCards = document.querySelectorAll('.project-card');
 
@@ -870,187 +675,32 @@
                 projectCards.forEach(card => {
                     if (filter === 'all' || card.getAttribute('data-category') === filter) {
                         card.style.display = 'flex';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 50);
                     } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.95)';
-                        setTimeout(() => {
-                            card.style.display = 'none';
-                        }, 300);
+                        card.style.display = 'none';
                     }
                 });
             });
         });
 
-        // Modal Controls
+        // Modal Functions
         function openModal(id) {
             const modal = document.getElementById(id);
-            if (modal) {
+            if(modal) {
                 modal.classList.remove('hidden');
-                modal.classList.add('flex');
                 document.body.style.overflow = 'hidden';
             }
         }
 
         function closeModal(id) {
             const modal = document.getElementById(id);
-            if (modal) {
+            if(modal) {
                 modal.classList.add('hidden');
-                modal.classList.remove('flex');
                 document.body.style.overflow = 'auto';
+                
+                // Pause all videos inside modal on close
+                const videos = modal.querySelectorAll('video');
+                videos.forEach(v => v.pause());
             }
-        }
-
-        // Lightbox state tracking for navigation
-        let currentLightboxImages = [];
-        let currentLightboxIndex = 0;
-
-        function openLightbox(src, caption = '', containerId = null) {
-            currentLightboxImages = [];
-
-            // Retrieve images from the specified gallery container
-            if (containerId) {
-                const container = document.getElementById(containerId);
-                if (container) {
-                    const imgs = container.querySelectorAll('img');
-                    imgs.forEach((img) => {
-                        const parent = img.closest('[onclick*="openLightbox"]');
-                        if (parent) {
-                            const parentCaption = parent.querySelector('p, h4')?.innerText || caption;
-                            currentLightboxImages.push({
-                                src: img.src,
-                                caption: parentCaption
-                            });
-                        }
-                    });
-                }
-            }
-
-            // Fallback for single image clicks
-            if (currentLightboxImages.length === 0) {
-                currentLightboxImages = [{ src, caption }];
-            }
-
-            // Match exact source URL or relative path matching
-            currentLightboxIndex = currentLightboxImages.findIndex(item => {
-                const imgUrl = new URL(item.src, window.location.href).href;
-                const targetUrl = new URL(src, window.location.href).href;
-                return imgUrl === targetUrl;
-            });
-
-            if (currentLightboxIndex === -1) currentLightboxIndex = 0;
-
-            updateLightboxContent();
-
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('hidden');
-            lightbox.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function updateLightboxContent() {
-            if (currentLightboxImages.length === 0) return;
-            const item = currentLightboxImages[currentLightboxIndex];
-            const lightboxImg = document.getElementById('lightboxImg');
-            const lightboxCaption = document.getElementById('lightboxCaption');
-            const lightboxHeaderTitle = document.getElementById('lightboxHeaderTitle');
-            const prevBtn = document.getElementById('lightboxPrevBtn');
-            const nextBtn = document.getElementById('lightboxNextBtn');
-
-            lightboxImg.src = item.src;
-
-            // Show controls and gallery counter for multi-image collections
-            if (currentLightboxImages.length > 1) {
-                prevBtn.style.display = 'flex';
-                nextBtn.style.display = 'flex';
-                lightboxHeaderTitle.innerText = item.caption ? `${item.caption}` : '';
-                lightboxCaption.innerText = `${currentLightboxIndex + 1} / ${currentLightboxImages.length}`;
-            } else {
-                prevBtn.style.display = 'none';
-                nextBtn.style.display = 'none';
-                lightboxHeaderTitle.innerText = item.caption;
-                lightboxCaption.innerText = '';
-            }
-        }
-
-        function nextLightboxImage() {
-            if (currentLightboxImages.length <= 1) return;
-            currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxImages.length;
-            updateLightboxContent();
-        }
-
-        function prevLightboxImage() {
-            if (currentLightboxImages.length <= 1) return;
-            currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxImages.length) % currentLightboxImages.length;
-            updateLightboxContent();
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.add('hidden');
-            lightbox.classList.remove('flex');
-            
-            // Re-evaluate scroll status if sub-modals remain open
-            const openModals = document.querySelectorAll('[id^="modal-"]:not(.hidden)');
-            if (openModals.length === 0) {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Keyboard Arrow Navigation
-        window.addEventListener('keydown', (e) => {
-            const lightbox = document.getElementById('lightbox');
-            if (!lightbox.classList.contains('hidden') && currentLightboxImages.length > 1) {
-                if (e.key === 'ArrowRight') {
-                    nextLightboxImage();
-                } else if (e.key === 'ArrowLeft') {
-                    prevLightboxImage();
-                } else if (e.key === 'Escape') {
-                    closeLightbox();
-                }
-            } else if (!lightbox.classList.contains('hidden') && e.key === 'Escape') {
-                closeLightbox();
-            }
-        });
-
-        // Close modal or lightbox on backdrop click
-        window.addEventListener('click', (e) => {
-            if (e.target.classList.contains('backdrop-blur-md')) {
-                const modals = document.querySelectorAll('[id^="modal-"]');
-                modals.forEach(m => {
-                    m.classList.add('hidden');
-                    m.classList.remove('flex');
-                });
-                document.body.style.overflow = 'auto';
-            }
-            if (e.target.id === 'lightbox' || e.target.classList.contains('backdrop-blur-xl')) {
-                closeLightbox();
-            }
-        });
-
-        // Contact Form Handling
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const name = document.getElementById('senderName').value;
-            const email = document.getElementById('senderEmail').value;
-            const category = document.getElementById('projectCategory').value;
-            const message = document.getElementById('senderMessage').value;
-
-            const formStatus = document.getElementById('formStatus');
-            formStatus.classList.remove('hidden');
-
-            const subject = encodeURIComponent(`Portfolio Inquiry: ${category} (${name})`);
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCategory: ${category}\n\nMessage:\n${message}`);
-
-            window.location.href = `mailto:mengheangmao2002@gmail.com?subject=${subject}&body=${body}`;
-
-            setTimeout(() => {
-                formStatus.classList.add('hidden');
-                document.getElementById('contactForm').reset();
-            }, 3000);
         }
     </script>
 </body>
