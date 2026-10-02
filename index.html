@@ -275,7 +275,7 @@
                         <div>
                             <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Motion Design Collection</h4>
                             <p class="text-xs text-gray-400 mt-2 leading-relaxed">
-                                Click below to view Intro/Outro (5 videos), Project 2 (5 videos), and Project 3 (5 videos) crafted in After Effects.
+                                Click below to view Intro/Outro (5 videos), Seasonal (5 slots), and Promotion (5 slots).
                             </p>
                         </div>
                         
@@ -624,7 +624,7 @@
         </div>
     </div>
 
-    <!-- Modal 2: Motion Design (3 Main Project Cards inside) -->
+   <!-- Modal 2: Motion Design (Contains Project 1: Intro/Outro, Project 2: Seasonal, Project 3: Promotion) -->
     <div id="modal-motion" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
         <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
             <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
@@ -637,14 +637,14 @@
                 </button>
             </div>
             
-            <div class="p-6 overflow-y-auto space-y-8">
-
-                <!-- Motion Project 1: Intro/Outro (5 Videos) -->
+            <div class="p-6 overflow-y-auto space-y-10">
+                
+                <!-- Project 1: Intro/Outro (5 Videos) -->
                 <div class="glass-card rounded-2xl p-6 border border-white/10">
                     <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                         <div>
-                            <h4 class="text-xl font-bold text-white">Intro/Outro</h4>
-                            <p class="text-xs text-gray-400 mt-1">5 Intro & Outro Animations Crafted in After Effects</p>
+                            <h4 class="text-xl font-bold text-white">Project 1: Intro/Outro</h4>
+                            <p class="text-xs text-gray-400 mt-1">Logo reveals, title intros, and smooth closing sequence animations.</p>
                         </div>
                         <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
                     </div>
@@ -722,14 +722,14 @@
                     </div>
                 </div>
 
-                <!-- Motion Project 2: (5 Video Cards Ready for Upload) -->
+                <!-- Project 2: Seasonal (5 Placeholder Cards for future uploads) -->
                 <div class="glass-card rounded-2xl p-6 border border-white/10">
                     <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                         <div>
-                            <h4 class="text-xl font-bold text-white">Project 2</h4>
-                            <p class="text-xs text-gray-400 mt-1">5 upcoming video uploads for Project 2</p>
+                            <h4 class="text-xl font-bold text-white">Project 2: Seasonal</h4>
+                            <p class="text-xs text-gray-400 mt-1">Holiday celebrations and seasonal event motion graphics.</p>
                         </div>
-                        <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
+                        <span class="text-xs text-cyan-400 font-mono font-bold bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">5 Videos</span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
@@ -738,13 +738,13 @@
                                 <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
                                     <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
                                         <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                            <source src="Project_2/project2-video-${num}.mp4" type="video/mp4">
+                                            <source src="Seasonal/seasonal-video-${num}.mp4" type="video/mp4">
                                             Your browser does not support video play.
                                         </video>
                                     </div>
                                     <div class="mt-3 px-1">
-                                        <h5 class="text-sm font-bold text-white">Project 2 - Video ${num}</h5>
-                                        <p class="text-[11px] text-gray-400">Ready for video upload</p>
+                                        <h5 class="text-sm font-bold text-white">Seasonal Video ${num}</h5>
+                                        <p class="text-[11px] text-gray-400">Seasonal motion graphic artwork</p>
                                     </div>
                                 </div>
                             `).join(''));
@@ -752,14 +752,14 @@
                     </div>
                 </div>
 
-                <!-- Motion Project 3: (5 Video Cards Ready for Upload) -->
+                <!-- Project 3: Promotion (5 Placeholder Cards for future uploads) -->
                 <div class="glass-card rounded-2xl p-6 border border-white/10">
                     <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                         <div>
-                            <h4 class="text-xl font-bold text-white">Project 3</h4>
-                            <p class="text-xs text-gray-400 mt-1">5 upcoming video uploads for Project 3</p>
+                            <h4 class="text-xl font-bold text-white">Project 3: Promotion</h4>
+                            <p class="text-xs text-gray-400 mt-1">Commercial ads, product highlights, and promotional motion videos.</p>
                         </div>
-                        <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
+                        <span class="text-xs text-rose-400 font-mono font-bold bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20">5 Videos</span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
@@ -768,13 +768,13 @@
                                 <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
                                     <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
                                         <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                            <source src="Project_3/project3-video-${num}.mp4" type="video/mp4">
+                                            <source src="Promotion/promotion-video-${num}.mp4" type="video/mp4">
                                             Your browser does not support video play.
                                         </video>
                                     </div>
                                     <div class="mt-3 px-1">
-                                        <h5 class="text-sm font-bold text-white">Project 3 - Video ${num}</h5>
-                                        <p class="text-[11px] text-gray-400">Ready for video upload</p>
+                                        <h5 class="text-sm font-bold text-white">Promotion Video ${num}</h5>
+                                        <p class="text-[11px] text-gray-400">Commercial & promo motion animation</p>
                                     </div>
                                 </div>
                             `).join(''));
