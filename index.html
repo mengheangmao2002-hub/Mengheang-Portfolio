@@ -275,12 +275,12 @@
                         <div>
                             <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Motion Design Collection</h4>
                             <p class="text-xs text-gray-400 mt-2 leading-relaxed">
-                                Click below to view Intro/Outro videos directly, Project 2, and Project 3 crafted in After Effects.
+                                Click below to view Intro/Outro (5 videos), Project 2 (5 videos), and Project 3 (5 videos) crafted in After Effects.
                             </p>
                         </div>
                         
                         <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
-                            <span class="text-[11px] text-purple-400 font-mono font-semibold">5 Intro/Outro Videos</span>
+                            <span class="text-[11px] text-purple-400 font-mono font-semibold">3 Projects Inside</span>
                             <button onclick="openModal('modal-motion')" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 group/btn">
                                 View Details
                                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
@@ -624,96 +624,168 @@
         </div>
     </div>
 
-   <!-- Modal 2: Motion Design (Contains 5 Intro/Outro Videos) -->
+    <!-- Modal 2: Motion Design (3 Main Project Cards inside) -->
     <div id="modal-motion" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
         <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
             <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
                 <div>
                     <h3 class="text-xl font-bold text-white">Motion Design Showcase</h3>
-                    <p class="text-xs text-purple-400 font-mono">5 Intro & Outro Animations Crafted in After Effects</p>
+                    <p class="text-xs text-purple-400 font-mono">3 Motion Projects Crafted in After Effects</p>
                 </div>
                 <button onclick="closeModal('modal-motion')" class="p-2 rounded-full hover:bg-white/10 text-gray-400 hover:text-white transition-colors">
                     <i data-lucide="x" class="w-6 h-6"></i>
                 </button>
             </div>
             
-            <div class="p-6 overflow-y-auto space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
-                    
-                    <!-- Video 1 -->
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
-                        <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
-                            <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                <source src="Intro_Outro/motion-video-1.mp4" type="video/mp4">
-                                Your browser does not support video play.
-                            </video>
+            <div class="p-6 overflow-y-auto space-y-8">
+
+                <!-- Motion Project 1: Intro/Outro (5 Videos) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Intro/Outro</h4>
+                            <p class="text-xs text-gray-400 mt-1">5 Intro & Outro Animations Crafted in After Effects</p>
                         </div>
-                        <div class="mt-3 px-1">
-                            <h5 class="text-sm font-bold text-white">Intro Ministry of Foreign Affairs and International Cooperation</h5>
-                            <p class="text-[11px] text-gray-400">Minimalist smooth transition</p>
-                        </div>
+                        <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
                     </div>
 
-                    <!-- Video 2 -->
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
-                        <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
-                            <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                <source src="Intro_Outro/motion-video-2.mp4" type="video/mp4">
-                                Your browser does not support video play.
-                            </video>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                        <!-- Video 1 -->
+                        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                            <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                    <source src="Intro_Outro/motion-video-1.mp4" type="video/mp4">
+                                    Your browser does not support video play.
+                                </video>
+                            </div>
+                            <div class="mt-3 px-1">
+                                <h5 class="text-sm font-bold text-white">Intro Ministry of Foreign Affairs and International Cooperation</h5>
+                                <p class="text-[11px] text-gray-400">Minimalist smooth transition</p>
+                            </div>
                         </div>
-                        <div class="mt-3 px-1">
-                            <h5 class="text-sm font-bold text-white">Outro Ministry of Foreign Affairs and International Cooperation</h5>
-                            <p class="text-[11px] text-gray-400">Logo Motion Reveal</p>
+
+                        <!-- Video 2 -->
+                        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                            <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                    <source src="Intro_Outro/motion-video-2.mp4" type="video/mp4">
+                                    Your browser does not support video play.
+                                </video>
+                            </div>
+                            <div class="mt-3 px-1">
+                                <h5 class="text-sm font-bold text-white">Outro Ministry of Foreign Affairs and International Cooperation</h5>
+                                <p class="text-[11px] text-gray-400">Logo Motion Reveal</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                            <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                    <source src="Intro_Outro/motion-video-3.mp4" type="video/mp4">
+                                    Your browser does not support video play.
+                                </video>
+                            </div>
+                            <div class="mt-3 px-1">
+                                <h5 class="text-sm font-bold text-white">Intro GWM car functional</h5>
+                                <p class="text-[11px] text-gray-400">Title text motion</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 4 -->
+                        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                            <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                    <source src="Intro_Outro/motion-video-4.mp4" type="video/mp4">
+                                    Your browser does not support video play.
+                                </video>
+                            </div>
+                            <div class="mt-3 px-1">
+                                <h5 class="text-sm font-bold text-white">Outro Bodaiju Residence</h5>
+                                <p class="text-[11px] text-gray-400">Luxary realestate outro </p>
+                            </div>
+                        </div>
+
+                        <!-- Video 5 -->
+                        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                            <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                    <source src="Intro_Outro/motion-video-5.mp4" type="video/mp4">
+                                    Your browser does not support video play.
+                                </video>
+                            </div>
+                            <div class="mt-3 px-1">
+                                <h5 class="text-sm font-bold text-white">Intro funny video</h5>
+                                <p class="text-[11px] text-gray-400">Fast Action Transition Intro</p>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Video 3 -->
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
-                        <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
-                            <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                <source src="Intro_Outro/motion-video-3.mp4" type="video/mp4">
-                                Your browser does not support video play.
-                            </video>
-                        </div>
-                        <div class="mt-3 px-1">
-                            <h5 class="text-sm font-bold text-white">Intro GWM car functional</h5>
-                            <p class="text-[11px] text-gray-400">Title text motion</p>
-                        </div>
-                    </div>
-
-                    <!-- Video 4 -->
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
-                        <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
-                            <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                <source src="Intro_Outro/motion-video-4.mp4" type="video/mp4">
-                                Your browser does not support video play.
-                            </video>
-                        </div>
-                        <div class="mt-3 px-1">
-                            <h5 class="text-sm font-bold text-white">Outro Bodaiju Residence</h5>
-                            <p class="text-[11px] text-gray-400">Luxary realestate outro </p>
-                        </div>
-                    </div>
-
-                    <!-- Video 5 -->
-                    <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
-                        <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
-                            <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
-                                <source src="Intro_Outro/motion-video-5.mp4" type="video/mp4">
-                                Your browser does not support video play.
-                            </video>
-                        </div>
-                        <div class="mt-3 px-1">
-                            <h5 class="text-sm font-bold text-white">Intro funny video</h5>
-                            <p class="text-[11px] text-gray-400">Fast Action Transition Intro</p>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Motion Project 2: (5 Video Cards Ready for Upload) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Project 2</h4>
+                            <p class="text-xs text-gray-400 mt-1">5 upcoming video uploads for Project 2</p>
+                        </div>
+                        <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                        <script>
+                            document.write(Array.from({length: 5}, (_, i) => i + 1).map(num => `
+                                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                                    <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                        <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                            <source src="Project_2/project2-video-${num}.mp4" type="video/mp4">
+                                            Your browser does not support video play.
+                                        </video>
+                                    </div>
+                                    <div class="mt-3 px-1">
+                                        <h5 class="text-sm font-bold text-white">Project 2 - Video ${num}</h5>
+                                        <p class="text-[11px] text-gray-400">Ready for video upload</p>
+                                    </div>
+                                </div>
+                            `).join(''));
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Motion Project 3: (5 Video Cards Ready for Upload) -->
+                <div class="glass-card rounded-2xl p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Project 3</h4>
+                            <p class="text-xs text-gray-400 mt-1">5 upcoming video uploads for Project 3</p>
+                        </div>
+                        <span class="text-xs text-purple-400 font-mono font-bold bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">5 Videos</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                        <script>
+                            document.write(Array.from({length: 5}, (_, i) => i + 1).map(num => `
+                                <div class="glass-card rounded-2xl overflow-hidden border border-white/10 p-3">
+                                    <div class="bg-black/50 rounded-xl overflow-hidden flex items-center justify-center">
+                                        <video controls preload="metadata" class="w-full h-auto max-h-[70vh] rounded-lg">
+                                            <source src="Project_3/project3-video-${num}.mp4" type="video/mp4">
+                                            Your browser does not support video play.
+                                        </video>
+                                    </div>
+                                    <div class="mt-3 px-1">
+                                        <h5 class="text-sm font-bold text-white">Project 3 - Video ${num}</h5>
+                                        <p class="text-[11px] text-gray-400">Ready for video upload</p>
+                                    </div>
+                                </div>
+                            `).join(''));
+                        </script>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
     <!-- Modal 3: Video Editing -->
     <div id="modal-editing" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
         <div class="glass-panel max-w-4xl w-full rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl relative max-h-[90vh] overflow-y-auto">
