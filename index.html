@@ -896,6 +896,18 @@
     </footer>
 
     <script>
+        // Auto-pause other videos when one starts playing
+        document.addEventListener('play', function(e) {
+            if (e.target.tagName && e.target.tagName.toLowerCase() === 'video') {
+                const videos = document.querySelectorAll('video');
+                videos.forEach(video => {
+                    if (video !== e.target) {
+                        video.pause();
+                    }
+                });
+            }
+        }, true);
+
         // Initialize Lucide Icons
         lucide.createIcons();
 
