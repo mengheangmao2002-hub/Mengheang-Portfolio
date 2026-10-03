@@ -624,7 +624,7 @@
         </div>
     </div>
 
-   <!-- Modal 2: Motion Design (Contains Project 1: Intro/Outro, Project 2: Seasonal, Project 3: Promotion) -->
+   <!-- Modal 2: Motion Design -->
     <div id="modal-motion" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
         <div class="glass-panel w-full max-w-5xl max-h-[90vh] rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl">
             <div class="p-6 border-b border-white/10 flex items-center justify-between bg-slate-900/50">
@@ -796,54 +796,61 @@
             <div class="mb-6">
                 <span class="bg-rose-500/20 text-rose-300 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Video Editing</span>
                 <h3 class="text-2xl font-bold text-white mt-2">Video Editing Projects</h3>
-                <p class="text-xs text-gray-400 mt-1">Detailed view of Video Editing productions with direct project links.</p>
+                <p class="text-xs text-gray-400 mt-1">Detailed view of Video Editing productions with direct project embeds.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Project 1: Realestate -->
+                <!-- Project 1: Realestate (Image thumbnail removed, Title kept, and videos formatted to fit card) -->
                 <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-5">
                     <div>
-                        <div class="aspect-video w-full bg-slate-900 rounded-xl overflow-hidden cursor-pointer mb-4" onclick="openLightbox('editing-1.jpg', 'Realestate Showcase')">
-                            <img src="editing-1.jpg" alt="Realestate Showcase" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='editing-1_2.jpg';">
-                        </div>
                         <h4 class="text-lg font-bold text-white">Realestate</h4>
                         <p class="text-xs text-gray-400 mt-1">High-speed ramping and precise keyframe curve velocity editing in CapCut.</p>
                     </div>
 
                     <div class="mt-6 pt-4 border-t border-white/10">
-                        <p class="text-[11px] font-bold text-cyan-400 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
-                            <i data-lucide="link" class="w-3.5 h-3.5"></i> Project Links (5)
+                        <p class="text-[11px] font-bold text-cyan-400 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                            <i data-lucide="play-circle" class="w-3.5 h-3.5"></i> Project Videos (5)
                         </p>
-                        <div class="flex flex-col gap-2">
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/realestate-1' with your actual link -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F048tc-PLek?si=4nZvj1uxYOZUHGvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <span class="truncate">Realestate Project 1</span>
-                                <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
-                            </a>
+                        <div class="flex flex-col gap-4">
+                            <!-- Realestate Video 1 -->
+                            <div>
+                                <p class="text-xs font-semibold text-gray-300 mb-1">Realestate Project 1</p>
+                                <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black/50 border border-white/10 shadow-md">
+                                    <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.youtube.com/embed/F048tc-PLek?si=4nZvj1uxYOZUHGvI" title="Realestate Project 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/realestate-2' with your actual link -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/11Rrsf_tSKw?si=qvO_Da7lG_2sFRDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <span class="truncate">Realestate Project 2</span>
-                                <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
-                            </a>
+                            <!-- Realestate Video 2 -->
+                            <div>
+                                <p class="text-xs font-semibold text-gray-300 mb-1">Realestate Project 2</p>
+                                <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black/50 border border-white/10 shadow-md">
+                                    <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.youtube.com/embed/11Rrsf_tSKw?si=qvO_Da7lG_2sFRDU" title="Realestate Project 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/realestate-3' with your actual link -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/S6f2GC_P4CY?si=yCaokrG5Ak6ez05T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <span class="truncate">Realestate Project 3</span>
-                                <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
-                            </a>
+                            <!-- Realestate Video 3 -->
+                            <div>
+                                <p class="text-xs font-semibold text-gray-300 mb-1">Realestate Project 3</p>
+                                <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black/50 border border-white/10 shadow-md">
+                                    <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.youtube.com/embed/S6f2GC_P4CY?si=yCaokrG5Ak6ez05T" title="Realestate Project 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/realestate-4' with your actual link -->
-                           <iframe width="560" height="315" src="https://www.youtube.com/embed/z589qMRcr2o?si=zPM89wIYvmd4JuZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <span class="truncate">Realestate Project 4</span>
-                                <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
-                            </a>
+                            <!-- Realestate Video 4 -->
+                            <div>
+                                <p class="text-xs font-semibold text-gray-300 mb-1">Realestate Project 4</p>
+                                <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black/50 border border-white/10 shadow-md">
+                                    <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.youtube.com/embed/z589qMRcr2o?si=zPM89wIYvmd4JuZr" title="Realestate Project 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/realestate-5' with your actual link -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qef0kZXNlz8?si=Gf_3XmTycl8MRSIO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <span class="truncate">Realestate Project 5</span>
-                                <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
-                            </a>
+                            <!-- Realestate Video 5 -->
+                            <div>
+                                <p class="text-xs font-semibold text-gray-300 mb-1">Realestate Project 5</p>
+                                <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black/50 border border-white/10 shadow-md">
+                                    <iframe class="absolute top-0 left-0 w-full h-full border-0" src="https://www.youtube.com/embed/qef0kZXNlz8?si=Gf_3XmTycl8MRSIO" title="Realestate Project 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -863,31 +870,26 @@
                             <i data-lucide="link" class="w-3.5 h-3.5"></i> Project Links (5)
                         </p>
                         <div class="flex flex-col gap-2">
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/slideshow-1' with your actual link -->
                             <a href="https://your-link-here.com/slideshow-1" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Slideshow Project 1</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/slideshow-2' with your actual link -->
                             <a href="https://your-link-here.com/slideshow-2" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Slideshow Project 2</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/slideshow-3' with your actual link -->
                             <a href="https://your-link-here.com/slideshow-3" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Slideshow Project 3</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/slideshow-4' with your actual link -->
                             <a href="https://your-link-here.com/slideshow-4" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Slideshow Project 4</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/slideshow-5' with your actual link -->
                             <a href="https://your-link-here.com/slideshow-5" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Slideshow Project 5</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
@@ -911,31 +913,26 @@
                             <i data-lucide="link" class="w-3.5 h-3.5"></i> Project Links (5)
                         </p>
                         <div class="flex flex-col gap-2">
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/event-1' with your actual link -->
                             <a href="https://your-link-here.com/event-1" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Event Project 1</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/event-2' with your actual link -->
                             <a href="https://your-link-here.com/event-2" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Event Project 2</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/event-3' with your actual link -->
                             <a href="https://your-link-here.com/event-3" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Event Project 3</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/event-4' with your actual link -->
                             <a href="https://your-link-here.com/event-4" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Event Project 4</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
                             </a>
 
-                            <!-- REPLACE_LINK_HERE: Replace 'https://your-link-here.com/event-5' with your actual link -->
                             <a href="https://your-link-here.com/event-5" target="_blank" rel="noopener noreferrer" class="text-xs text-gray-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 p-2 rounded-lg border border-white/5 flex items-center justify-between transition-colors">
                                 <span class="truncate">Event Project 5</span>
                                 <i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0 ml-1 opacity-70"></i>
